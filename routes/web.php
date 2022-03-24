@@ -24,4 +24,4 @@ Route::get('/blog',[BlogController::class,'index']);
 Route::get('/readmore',[BlogController::class,'readmore']);
 Route::get('/login',[LoginController::class,'index'])->name('login');
 Route::post('/store',[LoginController::class,'store']);
-Route::get('/home',[AdminController::class,'index'])->name('home')->middleware('auth');
+Route::get('/admin/main',[AdminController::class,'index'])->name('admin.main')->middleware('auth');

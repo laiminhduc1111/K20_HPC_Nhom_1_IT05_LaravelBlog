@@ -23,7 +23,7 @@ class LoginController extends Controller
         'password'=>$request->input('password')],$request->input('remember')
         ))
         {
-            return redirect()->route('home');
+            return redirect()->route('admin.main');
         }
         return redirect()->back();
     }
