@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\login;
+use App\Http\Controllers\MenuController;
+use Illuminate\Routing\Router;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +24,14 @@ Route::get('/', function () {
 
 Route::get('/blog',[BlogController::class,'index']);
 Route::get('/readmore',[BlogController::class,'readmore']);
-Route::get('/login',[LoginController::class,'index'])->name('login');
-Route::post('/store',[LoginController::class,'store']);
-Route::get('/admin/main',[AdminController::class,'index'])->name('admin.main')->middleware('auth');
+
+
+Route::prefix('admin')->group(function(){
+    Route::get('/login',[LoginController::class,'index'])->name('login');
+    Route::post('/store',[LoginController::class,'store']);
+    Route::get('/main',[AdminController::class,'index'])->name('admin.main')->middleware('auth');
+
+    Route::prefix('menu')->group(function(){
+        Route::get('/add',[MenuController::class,'create']);
+});
+});

@@ -1,5 +1,5 @@
 @extends('admin.home')
 
-@section('admin.content')
-Nội Dung
+@section('content')
+Nội Dung abc
 @endsection

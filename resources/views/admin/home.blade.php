@@ -131,7 +131,7 @@
               </ul>
             </div>
           </nav>
-          @yield('admin.content')
+          @yield('content')
     </div>
     
       </div>
