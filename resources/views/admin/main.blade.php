@@ -1,5 +1,7 @@
 @extends('admin.home')
 
 @section('content')
-Nội Dung abc
+
+    <h1 style="text-align: center;">Trang chủ</h1>
+
 @endsection

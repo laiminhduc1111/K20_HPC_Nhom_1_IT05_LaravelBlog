@@ -1,7 +1,7 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
            
-              <span >Trang Chủ</span>
+              <a href="/test/public/admin/main"><span >Trang Chủ</span></a>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -23,13 +23,13 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="form-layouts-vertical.html" class="menu-link">
-                    <div data-i18n="Vertical Form">Danh Sách Danh Mục</div>
+                  <a href="/test/public/admin/menu/list" class="menu-link">
+                    <div data-i18n="Vertical Form">Danh Sách User</div>
                   </a>
                 </li>
                 <li class="menu-item ">
-                  <a href="form-layouts-horizontal.html" class="menu-link">
-                    <div data-i18n="Horizontal Form">Thêm Danh Mục</div>
+                  <a href="/test/public/admin/menu/add" class="menu-link">
+                    <div data-i18n="Horizontal Form">Thêm User</div>
                   </a>
                 </li>
               </ul>
