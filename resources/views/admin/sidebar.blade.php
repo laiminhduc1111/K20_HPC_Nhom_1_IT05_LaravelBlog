@@ -17,19 +17,15 @@
           
            
             <li class="menu-item active open">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-detail"></i>
-                <div data-i18n="Form Layouts">Danh Mục</div>
-              </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="/test/public/admin/menu/list" class="menu-link">
-                    <div data-i18n="Vertical Form">Danh Sách User</div>
+                  <a href="{{route('list.product')}}" class="menu-link">
+                    <div data-i18n="Vertical Form">Danh Sách Sản Phẩm</div>
                   </a>
                 </li>
                 <li class="menu-item ">
-                  <a href="/test/public/admin/menu/add" class="menu-link">
-                    <div data-i18n="Horizontal Form">Thêm User</div>
+                  <a href="{{route('add.product')}}" class="menu-link">
+                    <div data-i18n="Horizontal Form">Thêm Sản Phẩm</div>
                   </a>
                 </li>
               </ul>
